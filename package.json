@@ -11,7 +11,7 @@
     "dev": "npm run dev-server & npm run dev-client",
     "start": " node server/app.js",
     "test": "ava",
-    "build-client": "NODE_ENV=production ykit pack -m"
+    "build-client": "cross-env NODE_ENV=production ykit pack -m"
   },
   "scripts-info": {
     "start": "运行生产环境服务器",
@@ -101,6 +101,7 @@
     "compression-webpack-plugin": "^1.0.0",
     "copy-webpack-plugin": "^4.0.1",
     "core-decorators": "^0.17.0",
+    "cross-env": "^5.2.0",
     "css-loader": "^0.28.4",
     "eslint": "^3.19.0",
     "eslint-loader": "^1.9.0",
@@ -146,6 +147,7 @@
     "webpack-dev-middleware": "^1.12.0",
     "webpack-node-externals": "^1.6.0",
     "ydoc-plugin-img-view": "^1.0.1",
+    "ykit": "^0.8.3-beta.0",
     "ykit-config-antd": "0.1.3",
     "ykit-config-es6": "^1.1.0"
   },
